@@ -51,12 +51,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.txtBoxSource, 5);
-            this.txtBoxSource.Location = new System.Drawing.Point(151, 6);
+            this.txtBoxSource.Location = new System.Drawing.Point(154, 6);
             this.txtBoxSource.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtBoxSource.Multiline = true;
             this.txtBoxSource.Name = "txtBoxSource";
             this.txtBoxSource.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtBoxSource.Size = new System.Drawing.Size(734, 138);
+            this.txtBoxSource.Size = new System.Drawing.Size(749, 138);
             this.txtBoxSource.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -89,14 +89,14 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1042, 450);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1059, 450);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(56, 215);
+            this.label2.Location = new System.Drawing.Point(59, 215);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 20);
             this.label2.TabIndex = 3;
@@ -108,19 +108,19 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.txtBoxResult, 5);
-            this.txtBoxResult.Location = new System.Drawing.Point(151, 156);
+            this.txtBoxResult.Location = new System.Drawing.Point(154, 156);
             this.txtBoxResult.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.txtBoxResult.Multiline = true;
             this.txtBoxResult.Name = "txtBoxResult";
             this.txtBoxResult.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtBoxResult.Size = new System.Drawing.Size(734, 138);
+            this.txtBoxResult.Size = new System.Drawing.Size(749, 138);
             this.txtBoxResult.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 65);
+            this.label1.Location = new System.Drawing.Point(17, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 20);
             this.label1.TabIndex = 2;
@@ -134,7 +134,7 @@
             this.btnSwap.Location = new System.Drawing.Point(6, 306);
             this.btnSwap.Margin = new System.Windows.Forms.Padding(6);
             this.btnSwap.Name = "btnSwap";
-            this.btnSwap.Size = new System.Drawing.Size(136, 138);
+            this.btnSwap.Size = new System.Drawing.Size(139, 138);
             this.btnSwap.TabIndex = 5;
             this.btnSwap.Text = "Поменять текста местами";
             this.btnSwap.UseVisualStyleBackColor = true;
@@ -145,10 +145,10 @@
             this.btnRemoveSpaces.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRemoveSpaces.Location = new System.Drawing.Point(154, 306);
+            this.btnRemoveSpaces.Location = new System.Drawing.Point(157, 306);
             this.btnRemoveSpaces.Margin = new System.Windows.Forms.Padding(6);
             this.btnRemoveSpaces.Name = "btnRemoveSpaces";
-            this.btnRemoveSpaces.Size = new System.Drawing.Size(136, 138);
+            this.btnRemoveSpaces.Size = new System.Drawing.Size(139, 138);
             this.btnRemoveSpaces.TabIndex = 6;
             this.btnRemoveSpaces.Text = "Убрать пробелы и переносы строк";
             this.btnRemoveSpaces.UseVisualStyleBackColor = true;
@@ -159,10 +159,10 @@
             this.btnUperrcase.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUperrcase.Location = new System.Drawing.Point(302, 306);
+            this.btnUperrcase.Location = new System.Drawing.Point(308, 306);
             this.btnUperrcase.Margin = new System.Windows.Forms.Padding(6);
             this.btnUperrcase.Name = "btnUperrcase";
-            this.btnUperrcase.Size = new System.Drawing.Size(136, 138);
+            this.btnUperrcase.Size = new System.Drawing.Size(139, 138);
             this.btnUperrcase.TabIndex = 4;
             this.btnUperrcase.Text = "Все слова начинаются с заглавной буквы";
             this.btnUperrcase.UseVisualStyleBackColor = true;
@@ -173,10 +173,10 @@
             this.btnSwapFirstLastLetterInWord.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSwapFirstLastLetterInWord.Location = new System.Drawing.Point(450, 306);
+            this.btnSwapFirstLastLetterInWord.Location = new System.Drawing.Point(459, 306);
             this.btnSwapFirstLastLetterInWord.Margin = new System.Windows.Forms.Padding(6);
             this.btnSwapFirstLastLetterInWord.Name = "btnSwapFirstLastLetterInWord";
-            this.btnSwapFirstLastLetterInWord.Size = new System.Drawing.Size(136, 138);
+            this.btnSwapFirstLastLetterInWord.Size = new System.Drawing.Size(139, 138);
             this.btnSwapFirstLastLetterInWord.TabIndex = 7;
             this.btnSwapFirstLastLetterInWord.Text = "Поменять местами первую и последнюю буквы каждого слова";
             this.btnSwapFirstLastLetterInWord.UseVisualStyleBackColor = true;
@@ -187,10 +187,10 @@
             this.btnModDate.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnModDate.Location = new System.Drawing.Point(894, 306);
+            this.btnModDate.Location = new System.Drawing.Point(912, 306);
             this.btnModDate.Margin = new System.Windows.Forms.Padding(6);
             this.btnModDate.Name = "btnModDate";
-            this.btnModDate.Size = new System.Drawing.Size(142, 138);
+            this.btnModDate.Size = new System.Drawing.Size(141, 138);
             this.btnModDate.TabIndex = 9;
             this.btnModDate.Text = "Обработать дату";
             this.btnModDate.UseVisualStyleBackColor = true;
@@ -201,10 +201,10 @@
             this.btnSaveTXT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSaveTXT.Location = new System.Drawing.Point(746, 306);
+            this.btnSaveTXT.Location = new System.Drawing.Point(761, 306);
             this.btnSaveTXT.Margin = new System.Windows.Forms.Padding(6);
             this.btnSaveTXT.Name = "btnSaveTXT";
-            this.btnSaveTXT.Size = new System.Drawing.Size(136, 138);
+            this.btnSaveTXT.Size = new System.Drawing.Size(139, 138);
             this.btnSaveTXT.TabIndex = 8;
             this.btnSaveTXT.Text = "Сохранить исходный текст";
             this.btnSaveTXT.UseVisualStyleBackColor = true;
@@ -215,10 +215,10 @@
             this.btnAzSort.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAzSort.Location = new System.Drawing.Point(598, 306);
+            this.btnAzSort.Location = new System.Drawing.Point(610, 306);
             this.btnAzSort.Margin = new System.Windows.Forms.Padding(6);
             this.btnAzSort.Name = "btnAzSort";
-            this.btnAzSort.Size = new System.Drawing.Size(136, 138);
+            this.btnAzSort.Size = new System.Drawing.Size(139, 138);
             this.btnAzSort.TabIndex = 10;
             this.btnAzSort.Text = "Отсортировать в алфавитном порядке";
             this.btnAzSort.UseVisualStyleBackColor = true;
@@ -229,10 +229,10 @@
             this.btnChooseDir.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnChooseDir.Location = new System.Drawing.Point(894, 6);
+            this.btnChooseDir.Location = new System.Drawing.Point(912, 6);
             this.btnChooseDir.Margin = new System.Windows.Forms.Padding(6);
             this.btnChooseDir.Name = "btnChooseDir";
-            this.btnChooseDir.Size = new System.Drawing.Size(142, 138);
+            this.btnChooseDir.Size = new System.Drawing.Size(141, 138);
             this.btnChooseDir.TabIndex = 9;
             this.btnChooseDir.Text = "Выбрать папку";
             this.btnChooseDir.UseVisualStyleBackColor = true;
@@ -243,10 +243,10 @@
             this.btnCleanDir.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCleanDir.Location = new System.Drawing.Point(894, 156);
+            this.btnCleanDir.Location = new System.Drawing.Point(912, 156);
             this.btnCleanDir.Margin = new System.Windows.Forms.Padding(6);
             this.btnCleanDir.Name = "btnCleanDir";
-            this.btnCleanDir.Size = new System.Drawing.Size(142, 138);
+            this.btnCleanDir.Size = new System.Drawing.Size(141, 138);
             this.btnCleanDir.TabIndex = 9;
             this.btnCleanDir.Text = "Очистить папку";
             this.btnCleanDir.UseVisualStyleBackColor = true;
@@ -256,7 +256,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 450);
+            this.ClientSize = new System.Drawing.Size(1059, 450);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Form1";
