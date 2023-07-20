@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using System.Globalization;
@@ -20,6 +15,66 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void BtnChooseDir_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+            if (folderBrowserDialog.ShowDialog() != DialogResult.OK)
+                return;
+            ResultText = folderBrowserDialog.SelectedPath;
+            txtBoxResult.Text = ResultText;
+            DirectoryInfo directory = new DirectoryInfo(ResultText);
+            HashSet<string> dirPaths = new HashSet<string>();
+
+            foreach (FileInfo file in directory.GetFiles())
+            {
+                try
+                {
+                    string extension = file.Extension;
+                    extension = extension.Substring(1, extension.Length - 1);
+
+                    if (dirPaths.Add(extension))
+                    {
+                        string path = $@"{ResultText}\{dirPaths.Last()}";
+                        if (!Directory.Exists(path))
+                            Directory.CreateDirectory(path);
+                    }
+
+                    string newFileEntry = $@"{ResultText}\{extension}\{file.Name}";
+                    if (File.Exists(newFileEntry))
+                        File.Delete(newFileEntry);
+                    file.MoveTo(newFileEntry);
+                }
+                catch (Exception) { }
+            }
+        }
+        private void BtnCleanDir_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+            if (folderBrowserDialog.ShowDialog() != DialogResult.OK)
+                return;
+            ResultText = folderBrowserDialog.SelectedPath;
+            txtBoxResult.Text = ResultText;
+            DirectoryInfo directory = new DirectoryInfo(ResultText);
+            //Delete every subdirectory
+            foreach (DirectoryInfo subdirectory in directory.GetDirectories())
+            {
+                try
+                {
+                    subdirectory.Delete(recursive: true);
+                }
+                catch (Exception) { }
+            }
+            //Delete every file in parent directory
+            foreach (FileInfo file in directory.GetFiles())
+            {
+                try
+                {
+                    file.Delete();
+                }
+                catch (Exception) { }
+            }
         }
 
         private void BtnSwap_Click(object sender, EventArgs e)
