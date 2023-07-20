@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Full-width input fields */
+        input[type=email],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Set a style for all buttons */
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+        }
+
+        img.logo {
+            width: 40%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+            padding-top: 60px;
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto;
+            /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 80%;
+            /* Could be more or less, depending on screen size */
+            max-width: 30em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal">
+        <form id="loginForm" action="#" class="modal-content animate">
+            <div class="imgcontainer">
+                <img src="icon.svg" alt="Logo" class="logo">
+            </div>
+
+            <div class="container">
+                <label for="email"><b>E-mail</b></label>
+                <input type="email" placeholder="Введите e-mail" name="email"
+                    required>
+
+                <label for="password"><b>Пароль</b></label>
+                <input type="password" placeholder="Введите пароль" name="password" required>
+
+                <button id="btnLogin" type="submit">Войти</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="rememberMe"> Запомнить меня
+                </label>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        var form = document.getElementById("loginForm");
+        var elements = document.getElementsByTagName("INPUT");
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            if (form.checkValidity() === false) {
+                form.reportValidity();
+                return;
+            }
+            console.log(form.elements["email"].value);
+            console.log(form.elements["password"].value);
+            console.log(form.elements["rememberMe"].checked);
+        })
+    </script>
+
+</body>
+
+</html>
